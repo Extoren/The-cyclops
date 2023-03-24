@@ -6,15 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>The cyclops</title>
+    <style>
+        /* Safari syntax */
+        :-webkit-full-screen {
+          background-color: none;
+        }
+        
+        /* IE11 */
+        :-ms-fullscreen {
+          background-color: none;
+        }
+        
+        /* Standard syntax */
+        :fullscreen {
+          background-color: none;
+        }
+        
+        /* Style the button */
+        button {
+          padding: 10px;
+          font-size: 20px;
+          border-color:#8B0000;
+          color:#8B0000;
+        }
+        </style>
+    <script>
+        var elem = document.documentElement;
+        function openFullscreen() {
+          if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+          } else if (elem.mzRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+          } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+          }
+        }
+        
+        function closeFullscreen() {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.mzExitFullscreen) { /* Safari */
+            document.webkitExitFullscreen();
+          } else if (document.msExitFullscreen) { /* IE11 */
+            document.msExitFullscreen();
+          }
+        }
+        </script>
 </head>
 <body>
-    <video autoplay loop id="trailer">
+    <button onclick="openFullscreen();">Open Fullscreen</button>
+    <button onclick="closeFullscreen();">Close Fullscreen</button>
+    <video autoplay muted loop id="trailer" width="100%" height="100%">
        <source src="Trailer.mp4" type="video/mp4">
        Your browser does not support html 5 video.
     </video>
     <div id="red" class="content red">
         <a href="Lobby.html"><h1>Continue?</h1></a>
     </div>
+    <audio autoplay loop>
+        <source src="Trailer.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <script src="main.js"></script> 
 </body>
 </html>
