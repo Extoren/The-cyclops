@@ -34,6 +34,15 @@
           background:none;
         }
         </style>
+        <script>
+            function time () {
+        setTimeout(function() {
+          window.location = "menu.html";
+        }, 12100);
+      }
+      
+    time ();
+        </script>
 </head>
 <body>
     <button onclick="openFullscreen();">Open Fullscreen</button>
@@ -42,9 +51,6 @@
        <source src="Trailer.mp4" type="video/mp4">
        Your browser does not support html 5 video.
     </video>
-    <div id="red" class="content red">
-        <a href="Lobby.html"><h1>Continue?</h1></a>
-    </div>
     <audio autoplay loop>
         <source src="Trailer.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
