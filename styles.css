@@ -1,6 +1,9 @@
 *{
-    background:black;
+    background-color: black;
 }
+body {
+    background-color: black;
+  }
 
 #trailer {
     position: fixed;
@@ -28,12 +31,13 @@ a {
     color:#CC0000;
     z-index: 10000000;
     background:none;
+    background-color: none;
 }
 
 p {
     color:#CC0000;
     text-align:center;
-    font-size:50pt;
+    font-size:40pt;
 }
 
 video {
@@ -55,3 +59,28 @@ h2 {
         left:41%;
     }
 }
+@media (max-width:1920px) {
+    h2 {
+        left:43%;
+    }
+}
+@media (max-width:1500px) {
+    h2 {
+        left:41%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
