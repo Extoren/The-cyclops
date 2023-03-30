@@ -1,6 +1,4 @@
-*{
-    background-color: black;
-}
+
 body {
     background-color: black;
   }
@@ -22,9 +20,10 @@ body {
 .content {
     position: fixed;
     bottom:0;
-    margin-left: 80%;
+    margin-left: 30%;
     color:red;
     display: none;
+    font-size:40pt;
 }
 a {
     text-decoration:none;
@@ -34,11 +33,23 @@ a {
     background-color: none;
 }
 
+a + a {
+    padding: 280px;
+    padding-top:10px;
+    padding-left: 260px;
+    padding-right: 10px;
+}
+
+a:hover {
+    color:#8B0000;
+}
+
 p {
     color:#CC0000;
     text-align:center;
     font-size:40pt;
 }
+
 
 video {
     z-index:-1;
