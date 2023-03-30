@@ -26,6 +26,7 @@ body {
     font-size:40pt;
 }
 a {
+    display:inline;
     text-decoration:none;
     color:#CC0000;
     z-index: 10000000;
