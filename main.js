@@ -5,8 +5,28 @@ function initialSetup() {
       }, 5000);
     }
   }
-  
+
   initialSetup();
+
+  function initialSetup2() {
+    if (document.getElementById("blue") != null) {
+      setTimeout(function() {
+        document.getElementById('blue').style.display = 'block';
+      }, 26000);
+    }
+  }
+
+  initialSetup2()
+
+  function initialSetup3() {
+    if (document.getElementById("yellow") != null) {
+      setTimeout(function() {
+        document.getElementById('yellow').style.display = 'block';
+      }, 10000);
+    }
+  }
+  
+  initialSetup3()
 
 
 
